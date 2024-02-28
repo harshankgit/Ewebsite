@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarak Onlie Home Page</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 900;
+      
+
+            padding: 0 20px;
+        }
+
+        .backc {
+            background: linear-gradient(to right, #a00b00, black, #a00b00);
+            color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        header {
+            background-color: #d00518;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+         
+        }
+
+
+
+
+
+        header h1 {
+            margin: 0;
+
+        }
+
+        header h1:hover {
+            color: cyan;
+            cursor: pointer;
+        }
+
+        nav {
+            background-color: #b10212;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            color: white;
+        }
+
+        nav a:hover {
+            background-color: #d00518;
+        }
+
+        .banner {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        .banner img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .product-container {
+            display: inline-block;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-image {
+            width: 100%;
+            max-height: 170px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .product-details {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        header img {
+            border-radius: 50%;
+        }
+
+        .slider {
+            display: flex;
+            width: 300%;
+            /* 100% * number of slides */
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            width: 100%;
+            flex: 0 0 100%;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+       
+       
+
+  
+   
+
+    
+
+        
+
+
+        #head1 {
+            border-bottom: 1px solid white;
+            background-color: #860f04;
+        }
+
+        #head1 div a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .left-side {
+            flex-grow: 1;
+            text-align: start;
+        }
+
+
+        .footer {
+            background-color: #a00b00;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            margin: 0 10px;
+            width: 50px;
+            /* Adjust the size as needed */
+            height: 50px;
+            /* Adjust the size as needed */
+            object-fit: cover;
+        }
+
+        .footer-details {
+            line-height: 1.5;
+        }
+
+        
+
+        .option {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .option:hover {
+            background-color: #a49594;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            animation: slideIn 1s forwards;
+        }
+
+        .contact-icon {
+            margin-right: 5px;
+        }
+
+
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            margin: 0 10px;
+            width: 50px;
+            /* Adjust the size as needed */
+            height: 50px;
+            /* Adjust the size as needed */
+            object-fit: cover;
+        }
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(20px);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+       
+
+        .search-container {
+            position: relative;
+        }
+
+        .search-input {
+            padding: 10px;
+            font-size: 16px;
+       
+            border-radius: 5px;
+            width: 340px;
+           
+            background-color: #fff;
+        }
+
+       
+
+        .search-icon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .search-icon img {
+            width: 20px;
+            height: 20px;
+        }
+
+        #logo1 {
+            width: 290px;
+            height: 101px;
+            margin: -10px;
+        }
+
+        .brand-logo {
+            background-color: black;
+        }
+
+        .product-card .product-image {
+            height: 200px;
+
+        }
+
+        #slider-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .control-btn {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .slide img {
+            height: 410px;
+            width: 100%;
+        }
+        .mainbox {
+            min-height: 800px;
+            background: azure;
+            display: flex;
+            justify-content: center;
+        }
+
+        .smallbox {
+
+            width: 70%;
+            height: 100%;
+            background-color: #a49594;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header id="head1">
+        <div class="left-side">
+            <span>Customer Number: +91 987-9832-666</span>
+        </div>
+        <div>
+            <a href="#signup">Sign Up</a>
+            <a href="#login">Login</a>
+            <a href="#customer-support">Customer Support</a>
+        </div>
+    </header>
+
+    <header>
+        <img src="Tarak onlne.png" alt="Company Logo" id="logo1">
+
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search...">
+            <div class="search-icon">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS47eyw2humzx9RncP14BvYITWyVrrIV-HWLQ&usqp=CAU"
+                    alt="Search Icon">
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">Electronics</a>
+        <a href="#">Fashion</a>
+        <a href="#">Books</a>
+        <a href="#">Home & Furniture</a>
+        <!-- Add more categories as needed -->
+    </nav>
+
+    <div id="slider-container">
+        <div id="slider">
+            <div class="slide"><img src="happy.png" alt="Image 1"></div>
+            <div class="slide"><img src="logo3.png" alt="Image 2"></div>
+            <div class="slide"><img src="happy.png" alt="Image 3"></div>
+        </div>
+        <div class="controls">
+            <button class="control-btn" onclick="prevSlide()">❮</button>
+            <button class="control-btn" onclick="nextSlide()">❯</button>
+        </div>
+    </div>
+
+    <div class="mainbox">
+        <div class="smallbox">
+            <!-- <div class="fixed1">
+                <div id="topsale1">DEAL OF THE DAY</div>
+                <div id="fixed-box1">
+                    <img class="image" src="product1.jpg" alt="Image 1">
+                    <img class="image" src="product2.jpeg" alt="Image 2">
+                    <img class="image" src="product5.jpeg" alt="Image 3">
+                </div>
+                
+            </div> -->
+        
+        </div>
+
+    </div>
+
+
+
+
+    <div class="footer">
+        <div class="logo-container">
+            <img class="logo" src="https://static-00.iconduck.com/assets.00/linkedin-icon-2048x2048-ya5g47j2.png"
+                alt="Logo 1">
+            <a href="https://www.instagram.com/spritegenix/"> <img class="logo"
+                    src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-512.png"
+                    alt="Logo 2"></a>
+
+            <!-- Add more logos as needed -->
+        </div>
+        <div class="footer-details">
+            <p>&copy; 2023 Tarak Online. All rights reserved.</p>
+            <p>Arbuda Complex,Opp.Saraswati Hospital Deesa-Dhanera Highway Road, Dhanera - 385310.</p>
+            <p>Email: info@tarakonline.com | Phone: +91 987-9832-666</p>
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let currentIndex = 0;
+        const totalSlides = document.querySelectorAll('.slide').length;
+        const slider = document.getElementById('slider');
+
+        function showSlide(index) {
+            const translateValue = -index * 100 + '%';
+            slider.style.transform = 'translateX(' + translateValue + ')';
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            showSlide(currentIndex);
+        }
+
+        function autoSlide() {
+            nextSlide();
+        }
+
+        setInterval(autoSlide, 5000); // Change slide every 5 seconds
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
